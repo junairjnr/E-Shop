@@ -16,7 +16,12 @@ export default function Cart() {
 
     const removedMessage = (name) => {
         if (name) {
-            toast.success(`Successfully Removed "${name}" `);
+
+            toast.success(
+                <div>
+                    Successfully Removed <span className="font-bold text-base font-serif text-red-600">{name}</span> from the cart.
+                </div>
+            );
         }
     }
 

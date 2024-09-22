@@ -14,7 +14,11 @@ export default function ProductCard({ product }) {
 
     const successMessage = (product) => {
         if (product) {
-            toast.success(`Successfully "${product.name}" added to cart`);
+            toast.success(
+                <div>
+                    Successfully added <span className="font-bold text-base font-serif">{product.name}</span> to the cart.
+                </div>
+            );
             setLoading(false);
         }
     }
