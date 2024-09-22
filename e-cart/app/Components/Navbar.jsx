@@ -1,4 +1,4 @@
-// components/Navbar.js
+
 import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -12,7 +12,7 @@ export default function Navbar({ cartCount }) {
                 T-Shirt Store
             </div>
 
-            {/* Cart Icon with Lucide */}
+            {/* Cart Icon */}
             <div className="w-[25%] flex justify-end relative">
                 <Link href={'/cart'}>
                     <ShoppingCart size={40} className="cursor-pointer" />

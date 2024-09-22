@@ -321,7 +321,7 @@ export default function Dashboard() {
         type: ''
     });
 
-    const filteredProducts = products.filter((product) => {
+    const filteredProducts = products?.filter((product) => {
         return (
             product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
             product.color.toLowerCase().includes(searchTerm.toLowerCase()) ||

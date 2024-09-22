@@ -32,9 +32,7 @@ export default function ProductCard({ product }) {
         }, 1000);
     }
 
-    const isOutOfStock = product.quantity === 0;
-    // const image = images.find(img => img.id === product.id);
-    // console.log(image);
+    const isOutOfStock = product.quantity === 0
 
     return (
         <div
