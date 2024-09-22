@@ -406,7 +406,7 @@ export default function Dashboard() {
                     </div>
                 ) : (
                     <div className='w-full h-screen flex justify-center py-28'>
-                        <p className="text-center font-bold text-2xl">Oops..! There is No Item Found in your search.</p>
+                        <p className="text-center font-bold text-2xl">Oops! No items found in your search.</p>
                     </div>
                 )}
             </div>
