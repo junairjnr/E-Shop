@@ -396,11 +396,19 @@ export default function Dashboard() {
                 </div>
 
                 {/* Product Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6 ">
-                    {filteredProducts.map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                    ))}
-                </div>
+                {filteredProducts.length > 0 ? (
+                    <div className='w-full h-full rounded-md'>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6 ">
+                            {filteredProducts.map((product) => (
+                                <ProductCard key={product.id} product={product} />
+                            ))}
+                        </div>
+                    </div>
+                ) : (
+                    <div className='w-full h-screen flex justify-center py-28'>
+                        <p className="text-center font-bold text-2xl">Oops..! There is No Item Found in your search.</p>
+                    </div>
+                )}
             </div>
         </div>
     );
