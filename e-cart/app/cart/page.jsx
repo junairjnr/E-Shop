@@ -9,6 +9,8 @@ import { Plus, Minus, ArrowLeft } from 'lucide-react';
 
 export default function Cart() {
     const { cart, removeFromCart, updateQuantity } = useCartStore();
+    console.log();
+    
 
     const getTotalPrice = () => {
         return cart.reduce((total, item) => total + item.price * item.quantity, 0);
